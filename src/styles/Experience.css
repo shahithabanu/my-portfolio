@@ -1,0 +1,105 @@
+/* General Styles */
+.experience {
+  padding: 60px 10%;
+  background: #f9f9f9;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+}
+
+.job {
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.job h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #6a11cb;
+}
+
+.job p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.job ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.job ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.job ul li::before {
+  content: "▹";
+  position: absolute;
+  left: -15px;
+  color: #6a11cb;
+}
+
+/* Dark Mode */
+.dark-mode .experience {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .experience h2 {
+  color: #f1f1f1;
+}
+
+.dark-mode .job {
+  background: #1f1f1f;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .job h3 {
+  color: #bb86fc;
+}
+
+.dark-mode .job p {
+  color: #ccc;
+}
+
+.dark-mode .job ul li::before {
+  color: #bb86fc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    padding: 40px 5%;
+  }
+
+  .job {
+    padding: 20px;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .job h3 {
+    font-size: 1.2rem;
+  }
+
+  .job ul li {
+    font-size: 0.95rem;
+  }
+}

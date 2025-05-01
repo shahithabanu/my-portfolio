@@ -1,0 +1,105 @@
+/* Light Mode (Default) */
+body {
+    background: white;
+    color: black;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: #121212;
+    color: white;
+  }
+  
+  /* Navbar */
+  .dark-mode .navbar {
+    background: #222;
+    color: white;
+  }
+  
+  .dark-mode .navbar a {
+    color: white;
+  }
+  
+  .dark-mode .logo {
+    color: white;
+  }
+  
+  /* Sections (Home, About, Experience, Projects, Skills, Contact) */
+  .dark-mode .home,
+  .dark-mode .about,
+  .dark-mode .experience,
+  .dark-mode .projects,
+  .dark-mode .skills,
+  .dark-mode .contact {
+    background: #222;
+    color: white;
+  }
+  
+  /* Ensure all headings and paragraphs switch colors */
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode h4,
+  .dark-mode h5,
+  .dark-mode h6,
+  .dark-mode p {
+    color: white;
+  }
+  
+  /* Projects Section */
+.dark-mode .projects {
+    background: #222;  /* Dark background */
+    color: white;
+  }
+  
+  /* Project Cards */
+  .dark-mode .project-card {
+    background: #333;  /* Dark card background */
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .project-card h3 {
+    color: #bb86fc; /* Light purple for titles */
+  }
+  
+  .dark-mode .project-card p {
+    color: white;
+  }
+  
+  /* Buttons inside Projects */
+  .dark-mode .project-card .btn {
+    background: #6a11cb;
+    color: white;
+  }
+  
+  .dark-mode .project-card .btn:hover {
+    background: #4a0ba1;
+  }
+  
+  /* Footer */
+  .dark-mode .footer {
+    background: #181818;
+    color: white;
+  }
+  
+  /* Buttons */
+  .dark-mode .btn {
+    background: #6a11cb;
+    color: white;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #4a0ba1;
+  }
+  
+  /* Links */
+  .dark-mode a {
+    color: #bb86fc;
+  }
+  
+  .dark-mode a:hover {
+    color: #d4a3ff;
+  }
+  

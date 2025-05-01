@@ -1,0 +1,55 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #6a11cb;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #00aaff;
+}
+/* Dark Mode Footer */
+.dark-mode .footer {
+  background: #1e1e1e;  /* Dark neutral background */
+  color: #f9f9f9;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Light mode hover */
+.social-links a:hover {
+  color: #00aaff;
+}
+
+/* Dark mode hover */
+.dark-mode .social-links a:hover {
+  color: #bb86fc;
+}

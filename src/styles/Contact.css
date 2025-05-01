@@ -1,0 +1,74 @@
+.contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  color: #6a11cb;
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info .icon {
+  color: #6a11cb;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  color: #6a11cb;
+}
+
+/* 🌙 Dark Mode Styles */
+.dark-mode .contact {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .contact h2 {
+  color: #bb86fc;
+}
+
+.dark-mode .contact-intro {
+  color: #dddddd;
+}
+
+.dark-mode .contact-info p {
+  color: #cccccc;
+}
+
+.dark-mode .contact-info a {
+  color: #cccccc;
+}
+
+.dark-mode .contact-info a:hover {
+  color: #bb86fc;
+}
+
+.dark-mode .contact-info .icon {
+  color: #bb86fc;
+}
