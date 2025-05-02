@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Projects.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
     {
       title: "E-Commerce App",
@@ -60,7 +62,7 @@ const Projects = () => {
             <li>Guest Dashboard: View without login.</li>
             <li>Feedback system & dynamic article loader.</li>
           </ul>
-          <p className="tech-stack"> <strong>Tech Stack:</strong> React, JavaScript, PHP, SQL, Bootstrap</p>
+          <p className="tech-stack"><strong>Tech Stack:</strong> React, JavaScript, PHP, SQL, Bootstrap</p>
         </>
       ),
       link: "https://github.com/shahithabanu/blog.git"
@@ -76,18 +78,20 @@ const Projects = () => {
             <li>Employee: Apply leaves, track status.</li>
             <li>Optimized database and secure access.</li>
           </ul>
-          <p className="tech-stack"> <strong>Tech Stack:</strong> React, PHP, SQL, Bootstrap</p>
+          <p className="tech-stack"><strong>Tech Stack:</strong> React, PHP, SQL, Bootstrap</p>
         </>
       ),
       link: "https://github.com/shahithabanu/admin-hr-employee-.git"
     }
   ];
 
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+
   return (
     <section id="projects" className="projects">
       <h2>My Projects</h2>
       <div className="project-list">
-        {projects.map((project, index) => (
+        {displayedProjects.map((project, index) => (
           <div key={index} className="project-card">
             <h3>{project.title}</h3>
             <div className="description">{project.description}</div>
@@ -96,6 +100,11 @@ const Projects = () => {
             </a>
           </div>
         ))}
+      </div>
+      <div className="more-btn-container">
+        <button className="more-btn" onClick={() => setShowAll(!showAll)}>
+          {showAll ? "Show Less" : "More Projects"}
+        </button>
       </div>
     </section>
   );

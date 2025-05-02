@@ -117,3 +117,35 @@ h2 {
 .dark-mode .tech-stack{
   color: #fff;
 }
+
+.more-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-btn {
+  background-color: transparent;
+  border: 2px solid #6a11cb;
+  color: #6a11cb;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #6a11cb;
+  color: #fff;
+}
+
+/* Dark mode for button */
+.dark-mode .more-btn {
+  border-color: #bb86fc;
+  color: #bb86fc;
+}
+
+.dark-mode .more-btn:hover {
+  background-color: #bb86fc;
+  color: #121212;
+}
